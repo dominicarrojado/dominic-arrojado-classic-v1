@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dominic Arrojado</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="fragment" content="!" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+<header class="clearfix">
+    <a href="index.html" class="header-logo">
+        DA
+    </a>
+    <nav class="header-navbar">
+        <a onclick="scrollToElement('about', false);">
+            about
+        </a>
+        <a onclick="scrollToElement('works', false);">
+            works
+        </a>
+        <a onclick="scrollToElement('contact', false);">
+            contact
+        </a>
+    </nav>
+    <a class="header-toggle-btn" onclick="showMobileSidebar();">
+        <i class="fa fa-bars"></i>
+    </a>
+</header>
+
+<div id="mobileSidebar" class="mobile-sidebar">
+    <nav class="side-navbar">
+        <a onclick="scrollToElement('about', true);">
+            about
+        </a>
+        <a onclick="scrollToElement('works', true);">
+            works
+        </a>
+        <a onclick="scrollToElement('contact', true);">
+            contact
+        </a>
+    </nav>
+    <a class="close-btn" onclick="closeMobileSidebar();">
+        ×
+    </a>
+</div>
+
+<section id="main" class="home-main fullscreen-panel background-image-cover">
+    <div class="caption">
+        <p>
+            My works speak louder than my words.
+        </p>
+        <h1>
+            Let's work together.
+        </h1>
+    </div>
+    <div class="scroll-down">
+        <a onclick="scrollToElement('about', false);">
+            <i class="fa fa-angle-double-down animation-bounce"></i>
+        </a>
+    </div>
+    <div class="slideshow-dominic">
+        <div class="item">
+            <img src="images/dominic-arrojado-home-background-1.jpg">
+        </div>
+        <div class="item">
+            <img src="images/dominic-arrojado-home-background-2.jpg">
+        </div>
+        <div class="item">
+            <img src="images/dominic-arrojado-home-background-3.jpg">
+        </div>
+        <div class="item">
+            <img src="images/dominic-arrojado-home-background-4.jpg">
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section id="about" class="home-panel">
+    <h2>
+        About me
+    </h2>
+    <p>
+        A couple of things that you need to know.
+    </p>
+    <div class="line"></div>
+    <p>
+        Hi there, I’m Dominic Arrojado. I'm a humble developer who is passionate about what I do. I'm currently living in Quezon City, Philippines. During my college days, I have developed a pizza delivery website, a group chat, and a school enrollment system. That's when I thought I really like building websites and web applications. I graduated with Bachelor’s Degree in Information Technology at <a href="http://www.treston.edu.ph" target="_blank">Treston International College</a> in 2015. After that, I took a month rest from life.<br /><br />
+        After my vacation, I needed to return back to life and get a job. After a few applications, I got a job at <a href="https://www.hashtag-interactive.com" target="_blank">Hashtag Interactive</a> as a Web Developer and after a year I was promoted as a Full Stack Developer. And the rest is history...
+    </p>
+    <a onclick="scrollToElement('works', false);" class="btn-dominic">
+        See my works
+    </a>
+</section>
+
+<section id="works" class="home-panel">
+    <h2>
+        My works
+    </h2>
+    <p>
+        A bunch of things I've done so far.
+    </p>
+    <div class="line"></div>
+    <div class="home-works-list clearfix">
+        <a>
+            <img src="images/dominic-arrojado-work-0.jpg">
+            <div class="caption flex-column-center">
+                <h3>Qwerk</h3>
+                <p>Web & Mobile application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="https://onestepaheadfoundation.sg" target="_blank">
+            <img src="images/dominic-arrojado-work-18.jpg">
+            <div class="caption flex-column-center">
+                <h3>Aptamil: Build Your Baby's Foundation to be One Step Ahead (2017)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="https://www.k1664.sg" target="_blank">
+            <img src="images/dominic-arrojado-work-14.jpg">
+            <div class="caption flex-column-center">
+                <h3>Kronenbourg 1664 Singapore</h3>
+                <p>Microsite</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://adac2017-slideshow.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-7.jpg">
+            <div class="caption flex-column-center">
+                <h3>CNB: Anti-Drug Abuse Campaign Slideshow (2017)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="https://adac2017.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-6.jpg">
+            <div class="caption flex-column-center">
+                <h3>CNB: Anti-Drug Abuse Campaign (2017)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="https://www.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-2.jpg">
+            <div class="caption flex-column-center">
+                <h3>Hashtag Interactive</h3>
+                <p>Website</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://tmv.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-5.jpg">
+            <div class="caption flex-column-center">
+                <h3>Hashtag Interactive: To My Valentine (2017)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://cny.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-4.jpg">
+            <div class="caption flex-column-center">
+                <h3>Hashtag Interactive: CNY Fortune Teller (2017)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://christmas.hashtag-interactive.com" target="_blank">
+            <img src="images/dominic-arrojado-work-3.jpg">
+            <div class="caption flex-column-center">
+                <h3>Hashtag Interactive: Christmas Memory Game (2016)</h3>
+                <p>Web application</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-hashtag-interactive-welcome-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-15.jpg">
+            <div class="caption flex-column-center">
+                <h3>Welcome to Hashtag! (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-september-promo-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-17.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA: September Promo (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-singtel-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-13.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA / Singtel (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-smart-travel-2-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-12.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA: Smart Travel II (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-smart-home-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-11.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA SmartHome (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-shield-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-10.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA: Shield (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-mothers-day-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-9.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA: Mother's Day (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+        <a href="http://www.dominicarrojado.com/works-axa-smart-travel-edm" target="_blank">
+            <img src="images/dominic-arrojado-work-8.jpg">
+            <div class="caption flex-column-center">
+                <h3>AXA: Smart Travel (2017)</h3>
+                <p>EDM</p>
+            </div>
+            <div class="overlay"></div>
+        </a>
+    </div>
+    <a onclick="scrollToElement('contact', false);" class="btn-dominic">
+        Get in touch?
+    </a>
+</section>
+
+<section id="contact" class="home-panel">
+    <h2>
+        Say hello
+    </h2>
+    <p>
+        Write in a few words whatever you want to tell me.
+    </p>
+    <div class="line"></div>
+    <div class="home-contact-form">
+        <input type="text" placeholder="Full name" spellcheck="false" required><br />
+        <input type="text" placeholder="E-mail" spellcheck="false" required><br />
+        <input type="tel" placeholder="Mobile" spellcheck="false" required><br />
+        <textarea placeholder="Your message" spellcheck="false" required></textarea><br />
+        <input type="submit" class="btn-dominic" value="Send">
+    </div>
+</section>
+
+<footer>
+    <div class="social-media">
+        <a href="https://www.facebook.com/DominicArrojado" target="_blank">
+            <i class="fa fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/DominicArrojado" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/dominicarrojado" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://github.com/mroftalp" target="_blank">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="mailto:dominicarrojado@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+        </a>
+    </div>
+    <div class="caption">
+        ©&nbsp; Dominic Arrojado 2017
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
