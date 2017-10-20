@@ -28,19 +28,6 @@ FONT FACES
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
 
 /*--------------------------------------------------------------
 NORMALIZE
