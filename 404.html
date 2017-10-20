@@ -10,64 +10,37 @@
     <meta name="distribution" content="global" />
     <meta name="rating" content="general" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<header class="clearfix">
-    <a href="index.html" class="header-logo">
+<header class="header-main dark p-3">
+    <a href="index.html" class="brand select-none">
         DA
-    </a>
-    <nav class="header-navbar">
-        <a href="index.html#about">
-            about
-        </a>
-        <a href="index.html#works">
-            works
-        </a>
-        <a href="index.html#contact">
-            contact
-        </a>
-    </nav>
-    <a class="header-toggle-btn" onclick="showMobileSidebar();">
-        <i class="fa fa-bars"></i>
     </a>
 </header>
 
-<div id="mobileSidebar" class="mobile-sidebar">
-    <nav class="side-navbar">
-        <a href="index.html#about">
-            about
-        </a>
-        <a href="index.html#works">
-            works
-        </a>
-        <a href="index.html#contact">
-            contact
-        </a>
-    </nav>
-    <a class="close-btn" onclick="closeMobileSidebar();">
-        ×
-    </a>
-</div>
-
-<section class="fullscreen-panel background-image-cover">
-    <div class="caption">
-        <h1>
-            404 Not Found
-        </h1>
-        <p>
-            Woops. Looks like this page doesn't exist.
-        </p>
-        <a href="index.html" class="btn-dominic btn-dominic-white">
-            Go home
-        </a>
+<section class="with-header">
+    <div class="px-1 py-5">
+        <div class="container py-md-5 text-center">
+            <h1 class="page-banner-title mb-4 type-play font-weight-bold">
+                Error 404
+            </h1>
+            <p class="page-banner-content mb-5">
+                Woops. Looks like you're lost.
+            </p>
+            <a href="index.html" class="btn-dominic btn">
+                Go home
+            </a>
+        </div>
     </div>
 </section>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
