@@ -1,17 +1,4 @@
 /*--------------------------------------------------------------
-SCROLL TO TOP
---------------------------------------------------------------*/
-
-var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-if (scrollToTopBtn) {
-    scrollToTopBtn.addEventListener('click', function() {
-        $('html, body').animate({ scrollTop: 0 }, 800);
-    });
-}
-
-
-/*--------------------------------------------------------------
 ON SCROLL
 --------------------------------------------------------------*/
 
@@ -24,3 +11,18 @@ window.onscroll = function windowOnScroll() {
         document.getElementById('scrollToTopBtn').classList.add('show');
     }
 };
+
+
+/*--------------------------------------------------------------
+SCROLL TO TOP
+--------------------------------------------------------------*/
+
+var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({ scrollTop: 0 }, 800);
+    });
+}
