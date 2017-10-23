@@ -8,11 +8,6 @@ NORMALIZE
     -webkit-font-smoothing: antialiased;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
 a {
     color: #555555;
     text-decoration: underline;
@@ -96,7 +91,7 @@ textarea.form-control-dominic {
 }
 
 .form-control-dominic.wpcf7-not-valid {
-    border-color: #e33e50;
+    border-color: #dc3545;
 }
 
 
@@ -121,6 +116,23 @@ BUTTONS
 .btn-dominic:hover {
     color: #111111;
     background-color: transparent;
+}
+
+
+/*--------------------------------------------------------------
+TOOLTIPS
+--------------------------------------------------------------*/
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    max-width: 300px;
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 1.2;
+    opacity: 1;
 }
 
 
@@ -285,11 +297,19 @@ HOME
     margin: 30px 0 0;
     text-align: center;
     padding: 0;
-    color: #e33e50;
+    color: #1b1e21;
     font-size: 18px;
     line-height: 1.4;
     overflow: hidden;
     z-index: 1;
+}
+
+.home-contact div.wpcf7-response-output.wpcf7-validation-errors {
+    color: #dc3545;
+}
+
+.home-contact div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #28a745;
 }
 
 .home-contact div.wpcf7 .ajax-loader {
