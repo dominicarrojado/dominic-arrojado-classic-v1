@@ -204,9 +204,11 @@ FOOTER
 }
 
 .footer-main .social a {
-    margin: 0 12px;
+    display: inline-block;
+    padding: 8px 12px;
     color: #999999;
     font-size: 30px;
+    line-height: 1;
     text-decoration: none;
     cursor: pointer;
     -webkit-transition: color .2s ease-in-out;
