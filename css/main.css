@@ -48,7 +48,7 @@ BACKGROUND
 }
 
 .bg-black {
-    background-color: #111111;
+    background-color: #000000;
 }
 
 .bg-gray {
@@ -103,17 +103,40 @@ BUTTONS
     display: inline-block;
     outline: none;
     border-radius: 0;
-    border: 2px solid #111111;
+    border: 2px solid transparent;
     padding: 12px 40px;
-    color: #ffffff;
+    color: #111111;
     font-size: 20px;
     line-height: 1;
     text-decoration: none;
-    background-color: #111111;
+    background-color: transparent;
     cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.btn-dominic:hover {
+.btn-dominic.btn-dominic-outline-white {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-dominic.btn-dominic-outline-white:hover,
+.btn-dominic.btn-dominic-outline-white:focus {
+    color: #111111;
+    background-color: #ffffff;
+}
+
+.btn-dominic.btn-dominic-black {
+    border-color: #111111;
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.btn-dominic.btn-dominic-black:hover,
+.btn-dominic.btn-dominic-black:focus {
     color: #111111;
     background-color: transparent;
 }
@@ -227,16 +250,38 @@ FOOTER
 PAGE BANNER
 --------------------------------------------------------------*/
 
+.page-banner-full {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-banner-full .scroll-to-bottom {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.page-banner-full .scroll-to-bottom > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 40px;
+}
+
 .page-banner-title {
     font-size: 50px;
     line-height: 1;
 }
 
 .page-banner-content {
-    font-size: 20px;
-    opacity: .6;
+    font-size: 22px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
-
 
 /*--------------------------------------------------------------
 PANEL
@@ -340,6 +385,56 @@ HOME
 
 
 /*--------------------------------------------------------------
+ANIMATIONS
+--------------------------------------------------------------*/
+
+@-webkit-keyframes bounce {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.animation-bounce {
+    -webkit-animation: bounce 2s ease infinite;
+    animation: bounce 2s ease infinite;
+}
+
+
+/*--------------------------------------------------------------
 MEDIA QUERIES
 --------------------------------------------------------------*/
 
@@ -371,7 +466,7 @@ MEDIA QUERIES
     }
 
     .page-banner-content {
-        font-size: 17px;
+        font-size: 18px;
     }
 
 

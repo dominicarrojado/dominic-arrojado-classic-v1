@@ -5,7 +5,7 @@ ON SCROLL
 window.onscroll = function windowOnScroll() {
     var currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    if (currentScrollTop < 20) {
+    if (currentScrollTop < 100) {
         document.getElementById('scrollToTopBtn').classList.remove('show');
     } else {
         document.getElementById('scrollToTopBtn').classList.add('show');
@@ -14,24 +14,15 @@ window.onscroll = function windowOnScroll() {
 
 
 /*--------------------------------------------------------------
-SCROLL TO TOP
---------------------------------------------------------------*/
-
-var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-if (scrollToTopBtn) {
-    scrollToTopBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        $('html, body').animate({ scrollTop: 0 }, 800);
-    });
-}
-
-
-/*--------------------------------------------------------------
-BOOTSTRAP
+ JQUERY
 --------------------------------------------------------------*/
 
 $(function () {
+    $('.scroll-to-href').on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({ scrollTop: $(event.currentTarget.getAttribute('href')).offset().top }, 800);
+    });
+
     $('[data-toggle="tooltip"]').tooltip();
 });
