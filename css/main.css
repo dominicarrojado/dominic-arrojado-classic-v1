@@ -106,9 +106,10 @@ BUTTONS
     border: 2px solid transparent;
     padding: 12px 40px;
     color: #111111;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1;
     text-decoration: none;
+    text-transform: uppercase;
     background-color: transparent;
     cursor: pointer;
     -webkit-transition: all .2s ease-in-out;
@@ -118,16 +119,6 @@ BUTTONS
     transition: all .2s ease-in-out;
 }
 
-.btn-dominic.btn-dominic-outline-white {
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-.btn-dominic.btn-dominic-outline-white:hover,
-.btn-dominic.btn-dominic-outline-white:focus {
-    color: #111111;
-    background-color: #ffffff;
-}
 
 .btn-dominic.btn-dominic-black {
     border-color: #111111;
@@ -135,12 +126,19 @@ BUTTONS
     background-color: #111111;
 }
 
-.btn-dominic.btn-dominic-black:hover,
-.btn-dominic.btn-dominic-black:focus {
-    color: #111111;
-    background-color: transparent;
+.btn-dominic.btn-dominic-black:hover {
+    border-color: #333333;
+    background-color: #333333;
 }
 
+.btn-dominic.btn-dominic-black:active {
+    border-color: #444444;
+    background-color: #444444;
+}
+
+.btn-dominic.btn-dominic-black:focus {
+    outline: none;
+}
 
 /*--------------------------------------------------------------
 TOOLTIPS
@@ -303,6 +301,33 @@ PANEL
 HOME
 --------------------------------------------------------------*/
 
+.home-work .collapsed > .work-item {
+    display: none;
+}
+
+.home-work .collapsed > .work-item:first-child,
+.home-work .collapsed > .work-item:nth-child(2),
+.home-work .collapsed > .work-item:nth-child(3),
+.home-work .collapsed > .work-item:nth-child(4) {
+    display: block;
+}
+
+.home-work .work-item {
+    display: block;
+    -webkit-animation: slide-up .8s;
+    -o-animation: slide-up .8s;
+    animation: slide-up .8s;
+}
+
+.home-work .work-item:first-child,
+.home-work .work-item:nth-child(2),
+.home-work .work-item:nth-child(3),
+.home-work .work-item:nth-child(4) {
+    -webkit-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
 .home-work .work-item a {
     position: relative;
 }
@@ -363,7 +388,7 @@ HOME
     display: none;
     width: 17px;
     height: 19px;
-    margin: 17px;
+    margin: 13px;
     background-image: none;
     color: #000000;
     font: normal normal normal 14px/1 FontAwesome;
@@ -387,6 +412,31 @@ HOME
 /*--------------------------------------------------------------
 ANIMATIONS
 --------------------------------------------------------------*/
+
+@-webkit-keyframes slide-up {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
 
 @-webkit-keyframes bounce {
     0%, 10%, 20%, 50%, 80%, 100% {
@@ -437,14 +487,6 @@ ANIMATIONS
 /*--------------------------------------------------------------
 MEDIA QUERIES
 --------------------------------------------------------------*/
-
-@media only screen and (max-width: 1199px) {
-
-}
-
-@media only screen and (max-width: 991px) {
-
-}
 
 @media only screen and (max-width: 767px) {
 

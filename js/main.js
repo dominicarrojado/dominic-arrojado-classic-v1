@@ -1,4 +1,22 @@
 /*--------------------------------------------------------------
+FUNCTIONS
+--------------------------------------------------------------*/
+
+function viewAllWork() {
+    document.getElementById('homeWork').classList.remove('collapsed');
+    document.getElementById('btnViewAllWork').classList.add('d-none');
+}
+
+function scrollToHref(event) {
+    event.preventDefault();
+
+    var target = jQuery(event.currentTarget.getAttribute('href'));
+
+    jQuery('html, body').animate({ scrollTop: target.length > 0 ? target.offset().top : 0 }, 800);
+}
+
+
+/*--------------------------------------------------------------
 ON SCROLL
 --------------------------------------------------------------*/
 
@@ -14,15 +32,9 @@ window.onscroll = function windowOnScroll() {
 
 
 /*--------------------------------------------------------------
- JQUERY
+JQUERY
 --------------------------------------------------------------*/
 
-$(function () {
-    $('.scroll-to-href').on('click', function(event) {
-        event.preventDefault();
-
-        $('html, body').animate({ scrollTop: $(event.currentTarget.getAttribute('href')).offset().top }, 800);
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
+jQuery(function () {
+    jQuery('[data-toggle="tooltip"]').tooltip();
 });
